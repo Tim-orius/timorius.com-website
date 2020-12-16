@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" kpf_version="5" name="webiste.komodoproject">
+<file id="33a0fc6b-25c6-44d4-9b27-2fbc5a7fc660" idref="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" name="projects.html" url="projects.html">
+</file>
+<file id="5f77b1a4-0868-4234-8036-c9bdf07aa0b8" idref="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" name="contact.html" url="contact.html">
+</file>
+<file id="9b10caf5-8d11-4a34-979f-130b2dc32428" idref="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" name="style.css" url="style.css">
+</file>
+<file id="a4829c07-2e6d-430d-b4f9-93c7c5aa246b" idref="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" name="index.html" url="index.html">
+</file>
+<file id="f1562809-f380-444d-865e-06852d61afad" idref="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" name="about.html" url="about.html">
+</file>
+<preference-set idref="2f6568b5-09c5-4f98-9b57-f014fc7ef3ed" id="project" preftype="project">
+</preference-set>
+</project>
