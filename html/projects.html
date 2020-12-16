@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<head>
+    <title>Timorius</title>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+ <div class="scrollmenu">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div>
+
+<body>
+    <h1>Projects</h1>
+    
+    <p>Test upload:</p>
+    
+    <form action="#video" method='post' enctype="multipart/form-data">
+    <input type="file" name="file"/><br><br>
+	<input type="submit" value="Upload"/>
+	</form>
+    </form>
+	
+	<?php 
+
+    $name= $_FILES['file']['name'];
+    $size = $_FILES['file']['size']
+    $tmp_name= $_FILES['file']['tmp_name'];
+    $position= strpos($name, ".");
+    
+    $fileextension= substr($name, $position + 1);
+    $fileextension= strtolower($fileextension);
+    
+    $path= 'uploads/videos/';
+
+    if (isset($name)) {
+        if (empty($name)) {
+            echo "Please choose a file (max. 20MB)";
+        } else if (!empty($name) && ($size < 20971520)){
+            if (($fileextension !== "mp4") && ($fileextension !== "ogg") && ($fileextension !== "webm")) {
+                echo "The file extension must be .mp4, .ogg, or .webm in order to be uploaded";
+            } else if (($fileextension == "mp4") || ($fileextension == "ogg") || ($fileextension == "webm")) {
+                if (move_uploaded_file($tmp_name, $path.$name)) {
+                    echo 'Uploaded!';
+                }
+            }
+        }
+    }
+    ?>
+    
+    <?php
+
+    if (($fileextension == "mp4") || ($fileextension == "ogg") || ($fileextension == "webm")) {
+        echo "<video width='320' controls>
+        <source src='$path/$name' type='video/$fileextension'>
+            Your browser does not support the video tag.
+        </video>";
+    }
+
+    ?>
+    ?>
+    
+</body>
+</html>
