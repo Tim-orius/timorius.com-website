@@ -1,6 +1,10 @@
 body {
   background-color: grey;
 }
+    
+#wrapper {
+    min-height: calc(100vh - 5em - 6px);
+}
 
 div.topnav {
   background-color: #333;
@@ -30,6 +34,13 @@ div.scrollmenu a:hover {
 
 .topnav a.active {
   background-color: #4CAF50;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #555;
   color: white;
 }
 
