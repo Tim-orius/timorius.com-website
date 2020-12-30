@@ -1,7 +1,7 @@
 body {
   background-color: grey;
 }
-    
+
 #wrapper {
     min-height: calc(100vh - 5em - 6px);
 }
@@ -28,7 +28,7 @@ div.topnav a {
   text-decoration: none;
 }
 
-div.scrollmenu a:hover {
+div.topnav a:hover {
   background-color: #777;
 }
 
