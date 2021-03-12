@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Timorius</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="description" content="Timorius homepage">
     <meta name="author" content="Timorius">
@@ -10,29 +10,62 @@
 
 <div class="topnav">
     <a class="active" href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <div class="topnav-right">
-        <a href="playground.html">Playground</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="projects/index.html">Overview</a>
+        <a href="projects/object-detection.html">Object detection</a>
+        <a href="projects/gtav_mods.html">GTA Modifications</a>
+        <a href="projects/minecraft-plugins.html">Minecaft Plugins</a>
+      </div>
     </div>
-</div> 
+    <a href="news/index.html">News</a>
+    <a href="about/index.html">About</a>
+    <div class="topnav-right">
+        <a href="playground/index.html">Playground</a>
+    </div>
+</div>
 
 <body>
     <div id="wrapper">
-    
-    <h1 class="center">Under Construction</h1>
-    
-    <img src="Images/bagger.png" alt="Excavator" class="center">
-    
-    <p class="center">This website is still WIP!</p>
-    
+
+      <div class="center">
+        <div class="flex2">
+          <div class="kachel-big-red">
+            <h2>Information</h2>
+            <p>This website is still in development. Thus the content can change at any time and any content might be removed or added at any point.</p>
+          </div>
+        </div>
+      </div>
+
+    <h1 class="center">Home</h1>
+    <div class="center">
+        <div class="flex1">
+          <div class=kachel-big2><a href="projects/FireyCallouts.html">
+            <img src="Images/fireycallouts.jpg" alt="FireyCallouts" class="imgcontainer">
+            <p>FireyCallouts v.0.1.0.0 released!</p>
+          </a></div>
+        </div>
     </div>
-    
+    <!--
+    <div class="center">
+        <div class="flex1">
+          <div class=kachel-big2><a href="projects/index.html">
+            <img src="Images/bagger.png" alt="Projekts" class="imgcontainer">
+            <p>Projects</p>
+          </a></div>
+        </div>
+    </div>
+  -->
+  </div>
+
     <footer>
-        <p>Email for contact: 
+        <p>Email for contact:
         <a href="mailto:timorius@gmx.de">timorius@gmx.de</a>,
         <a href="https://github.com/Tim-orius">Github</a></p>
     </footer>
-    
+
 </body>
 </html>

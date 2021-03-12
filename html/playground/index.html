@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <title>Timorius Playground</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<script type="text/javascript" src="../javascript/testing.js"></script>
+
+<div class="topnav">
+    <a href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../projects/index.html">Overview</a>
+        <a href="../projects/object-detection.html">Object detection</a>
+        <a href="../projects/gtav_mods.html">GTA Modifications</a>
+        <a href="../projects/minecraft-plugins.html">Minecaft Plugins</a>
+      </div>
+    </div>
+    <a href="../news/index.html">News</a>
+    <a href="../about/index.html">About</a>
+    <div class="topnav-right">
+        <a class="active" href="../playground/index.html">Playground</a>
+    </div>
+</div>
+
+<body>
+    <div id="wrapper">
+
+    <h1 class="center">Playground</h1>
+
+    <p class="center">This section of the website will be used for testing new features
+      and for basic, funny or useless scripts that could be useful and I only made to
+      learn and improve my JavaScript skills.
+    </p>
+
+    <div class="center">
+        <div class="flex2">
+          <div class="kachel-grey">
+            <h2 class="center">Random number sequence</h2>
+
+            <p class="center">Here you can generate any amount of random numbers. Be aware
+             that the numbers are <strong>pseudo random</strong>!</p>
+
+            <form class="center" onsubmit="generate(); return false;">
+              Amount of numbers:
+              <input type="text" id="gen_amount">
+              <input type="submit" value="generate">
+            </form>
+
+            <p class="center">The random numbers:
+               <input class="longfield" type="text" id="gen_output"></p>
+          </a></div>
+          <div class="kachel-grey">
+            <h2 class="center">Number sorting</h2>
+
+            <p class="center">Here you can sort a list of unsorted numbers (e.g. some
+               numbers generated above). The used algorithm to sort is
+               <strong>Merge Sort</strong>. The numbers have to be comma delimited
+               (1.0, 2.0, ...).</p>
+
+            <form class="center" onsubmit="doSort(); return false;">
+              Numbers:
+              <input class="longfield" type="text" id="unsorted">
+              <input type="submit" value="sort">
+            </form>
+
+            <p class="center">The numbers in order (smallest to biggest value):
+               <input class="longfield" type="text" id="sort_output"></div></p>
+          </a></div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>Email for contact:
+        <a href="mailto:timorius@gmx.de">timorius@gmx.de</a>,
+        <a href="https://github.com/Tim-orius">Github</a></p>
+    </footer>
+</body>
+</html>
